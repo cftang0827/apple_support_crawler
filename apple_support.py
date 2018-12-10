@@ -27,8 +27,7 @@ def send_notification(server, gmail_user, body):
     server.sendmail(sent_from, sent_to, msg.as_string())
 
 
-# gmail_user = input("Gmail account: ")
-gmail_user = "cftang0827@gmail.com"
+gmail_user = input("Gmail account: ")
 gmail_password = getpass.getpass("Password: ")
 with open('cookie', 'r') as f:
     cookies_from_apple_web = f.read().split('\n')[0]
