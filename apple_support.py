@@ -36,6 +36,8 @@ gmail_password = getpass.getpass("Password: ")
 with open('cookie', 'r') as f:
     cookies_from_apple_web = f.read().split('\n')[0]
 
+os.system("rm cookie")
+os.system("touch cookie")
 
 url = "https://getsupport.apple.com/web/v2/takein/timeslots"
 
